@@ -138,6 +138,7 @@ nav .nav-right a:hover{
     background: transparent;
     backdrop-filter: blur(10px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 -12px 90px rgba(0, 0, 0, 0.45);
 }
 
 .search-bar input:focus{
@@ -145,6 +146,7 @@ nav .nav-right a:hover{
     width: 210px;
     border-color: rgba(255, 255, 255, 0.7);
     color: white;
+    box-shadow: 0 -12px 90px rgba(0, 0, 0, 0.45);
 }
 
 .search-bar input::placeholder{
@@ -184,4 +186,69 @@ nav .nav-right a:hover{
     text-align: left;
     padding: 40px;
     font-weight: lighter;
+}
+
+.footer{
+    margin: 60px;
+    padding: 40px 60px;
+    background: transparent;
+    backdrop-filter: blur(15px);
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 20px ;
+    box-shadow: 0 -12px 50px rgba(0, 0, 0, 0.85);
+}
+
+.footer-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-left h2{
+
+    padding: 5px 10px;
+    font-family: 'Amoria';
+    font-size: 38px
+}
+
+.footer-left p{
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 14px;
+    padding: 7px;
+}
+
+.footer-left p:hover{
+    color: #ffffff;
+}
+
+.footer-right{
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.footer-right a{
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.footer-right a:hover{
+    color: #ffffff;
+}
+
+.footer-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-bottom a{
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    padding: 10px;;
+}
+
+.footer-bottom a:hover{
+    color: white;
 }
