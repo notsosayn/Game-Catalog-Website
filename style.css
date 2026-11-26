@@ -395,4 +395,15 @@ nav .nav-right a:hover{
         gap: 15px;
         padding: 0;
     }
+
+    .navbar {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    align-items: center;
+    padding: 1rem 2rem;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 100;
+    }
 }
