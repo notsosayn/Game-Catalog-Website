@@ -301,7 +301,7 @@ nav .nav-right a:hover{
     object-position: center 80%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     /* 1. Navbar ko mobile ke mutabiq compact karein */
     .navbar {
         padding: 15px 20px;
