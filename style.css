@@ -150,7 +150,6 @@ nav .nav-right a:hover{
 
 .search-bar input:focus{
     outline: none;
-    width: 210px;
     border-color: rgba(255, 255, 255, 0.7);
     color: white;
     box-shadow: 0 -12px 90px rgba(0, 0, 0, 0.45);
