@@ -1,95 +1,3 @@
-@media (max-width: 768px) {
-    /* 1. Navbar ko mobile ke mutabiq compact karein */
-    .navbar {
-        padding: 15px 20px;
-        justify-content: space-between;
-    }
-
-    .nav-centre {
-        display: none; /* Choti screen par menu links chhupa dein taake logo aur search bar na dabein */
-    }
-
-    .nav-right {
-        gap: 10px;
-    }
-
-    .search-bar input {
-        width: 130px;
-        font-size: 13px;
-    }
-
-    /* 2. Hero section ki spacing aur font size adjust karein */
-    .hero {
-        padding: 120px 20px 40px 20px;
-        text-align: center;
-    }
-
-    .hero-content h1 {
-        font-size: 42px;
-    }
-
-    .hero-content h2 {
-        font-size: 20px;
-    }
-
-    .hero-content p {
-        font-size: 14px;
-    }
-
-    /* 3. Featured Games section aur 5 cards ko 2-column grid banayein */
-    .games-scroll {
-        padding: 20px;
-    }
-
-    .games-scroll h2 {
-        font-size: 20px;
-        margin-bottom: 15px;
-    }
-
-    .cards-container {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr); /* Ek row mein 2 cards */
-        gap: 15px;
-    }
-
-    .game-card {
-        width: 100%;
-        height: 210px;
-    }
-
-    /* 5th card (Detroit) aakhri row mein akela na latke, poori chaudai le */
-    .cards-container .game-card:last-child {
-        grid-column: span 2;
-        height: 230px;
-    }
-
-    /* 4. Footer ko vertically center aur stack karein */
-    .footer {
-        margin: 20px;
-        padding: 25px 20px;
-    }
-
-    .footer-top,
-    .footer-bottom {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        gap: 15px;
-    }
-
-    .footer-right {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 12px 18px;
-    }
-
-    .footer-bottom ul {
-        display: flex;
-        gap: 15px;
-        padding: 0;
-    }
-}
-
 *{
     font-family: 'Inter', sans-serif;
     color: white;
@@ -384,4 +292,100 @@ nav .nav-right a:hover{
 
 #detroit-img{
     object-position: center 80%;
+}
+
+@media (max-width: 768px) {
+    /* 1. Navbar ko mobile ke mutabiq compact karein */
+    .navbar {
+        padding: 15px 20px;
+        justify-content: space-between;
+    }
+
+    .nav-centre {
+        display: none; /* Choti screen par menu links chhupa dein taake logo aur search bar na dabein */
+    }
+
+    .nav-right {
+        gap: 10px;
+    }
+
+    .search-bar input {
+        width: 130px;
+        font-size: 13px;
+    }
+
+    /* 2. Hero section ki spacing aur font size adjust karein */
+    .hero {
+        padding: 120px 20px 40px 20px;
+        text-align: center;
+    }
+
+    .hero-content h1 {
+        font-size: 42px;
+    }
+
+    .hero-content h2 {
+        font-size: 20px;
+    }
+
+    .hero-content p {
+        font-size: 14px;
+    }
+
+    /* 3. Featured Games section aur 5 cards ko 2-column grid banayein */
+    .games-scroll {
+        padding: 20px;
+    }
+
+    .games-scroll h2 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    .cards-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Ek row mein 2 cards */
+        gap: 15px;
+    }
+
+    .game-card {
+        width: 100%;
+        height: 210px;
+    }
+
+    .game-card img {
+    height: 220px;
+    }
+
+    /* 5th card (Detroit) aakhri row mein akela na latke, poori chaudai le */
+    .cards-container .game-card:last-child {
+        grid-column: span 2;
+        height: 230px;
+    }
+
+    /* 4. Footer ko vertically center aur stack karein */
+    .footer {
+        margin: 20px;
+        padding: 25px 20px;
+    }
+
+    .footer-top,
+    .footer-bottom {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .footer-right {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px 18px;
+    }
+
+    .footer-bottom ul {
+        display: flex;
+        gap: 15px;
+        padding: 0;
+    }
 }
