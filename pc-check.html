@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="pc-check.css">
+    <title>Frolik - Can my PC run it?</title>
+</head>
+
+<body>
+        <nav class="navbar">
+        <div class="nav-left">
+            <h1><a href="index.html">Frolik</a></h1>
+        </div>
+
+        <ul class="nav-centre">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="categories.html">Categories</a></li>
+            <li><a href="games.html">Games</a></li>
+            <li><a href="pc-check.html" class="active">PC Check</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+            <li><a href="info.html">Info</a></li>
+        </ul>
+
+        <div class="nav-right">
+            <div class="search-bar">
+                <input type="text" placeholder="Search games...">
+            </div>
+            <div class="user-profile">
+                <a href="feedback.html"><img src="Images/prof.png" alt="User Profile"></a>
+            </div>
+        </div>
+    </nav>
+
+    <h1 class="checker-title">Can my PC run it?</h1>
+
+    <div class="checker-layout">
+        <details class="side-box glass">
+            <summary>Low-End Build <span class="arrow">▾</span></summary>
+            <div class="build-info">
+                <p><strong>RAM:</strong> 8 GB (Basic)</p>
+                <p><strong>GPU:</strong> Integrated / GT 730</p>
+                <p><strong>Plays Well:</strong> Little Nightmares 2, Big City</p>
+            </div>
+        </details>
+
+        <main class="box glass">
+            <h2>Choose your hardware Specifications and select your game to find out!</h2> 
+            <select id="game">
+                <option value="0" disabled selected>Game</option>
+                <option value="1">The Last of US</option>
+                <option value="2">GTA 6</option>
+                <option value="3">Detroit Become Human</option>
+                <option value="4">Little Nightmares 2</option>
+                <option value="5">God of War</option>
+                <option value="6">Big City</option>
+            </select>
+            <select id="ram">
+                <option value="0" disabled selected>RAM</option>
+                <option value="1">8 GB (Basic)</option>
+                <option value="2">16 GB (Normal)</option>
+                <option value="3">32 GB+ (Elite)</option>
+            </select>
+
+            <select id="gpu">
+                <option value="0" disabled selected>GPU</option>
+                <option value="1">Basic / Integrated (Basic)</option>
+                <option value="2">Mid-Range (Normal)</option>
+                <option value="3">High-End (Elite)</option>
+            </select>
+
+            <div class="btn-wrap">
+                <button id="check-btn" type="button">Check</button>
+            </div>
+
+            <div id="result"></div>
+        </main>
+
+        <details class="side-box glass">
+            <summary>High-End Build <span class="arrow">▾</span></summary>
+            <div class="build-info">
+                <p><strong>RAM:</strong> 32 GB+ (Elite)</p>
+                <p><strong>GPU:</strong> RTX 3070 / 4070+</p>
+                <p><strong>Plays Well:</strong> GTA 6, The Last of Us, God of War</p>
+            </div>
+        </details>
+    </div>
+
+        <div class="footer">
+        <div class="footer-top">
+            <div class="footer-left">
+                <h2>Frolik</h2>
+                <p>Discover Your Next Favorite Game</p>
+            </div>
+            <ul class="footer-right">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="categories.html">Categories</a></li>
+                <li><a href="games.html">Games</a></li>
+                <li><a href="pc-check.html">PC Check</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="info.html">Info</a></li>
+            </ul>
+        </div>
+        <hr>
+        <div class="footer-bottom">
+            <p>© 2026 Frolik. All rights reserved.</p>
+            <ul>
+                <a href="info.html">Safety Guide</a>
+                <a href="feedback.html">Contact &amp; Feedback</a>
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Frolik - Feedback</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="feedback.css">
+</head>
+    <body>
+     <nav class="navbar">
+        <div class="nav-left">
+            <h1><a href="index.html">Frolik</a></h1>
+        </div>
+
+        <ul class="nav-centre">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="categories.html">Categories</a></li>
+            <li><a href="games.html">Games</a></li>
+            <li><a href="pc-check.html">PC Check</a></li>
+            <li><a href="feedback.html" class="active">Feedback</a></li>
+            <li><a href="info.html">Info</a></li>
+        </ul>
+
+        <div class="nav-right">
+            <div class="search-bar">
+                <input type="text" placeholder="Search games...">
+            </div>
+            <div class="user-profile">
+                <a href="feedback.html"><img src="Images/prof.png" alt="User Profile"></a>
+            </div>
+        </div>
+    </nav><br><br><br>
+<h2 id="line">Give Us Your Thoughts ! </h2>
+<p id="line2">Contact & Feedback / Bug Report</p><br><br>
+<div id="grid"></div>
+  <div class="vertical-line"></div>
+  <div class="box">
+     <h2>Gamer Feedback & Contact Form</h2>
+    <form action="#" id="feedbackForm" novalidate>
+    <label>Your name / gamertag</label>
+      <input type="text" id="gamertag" placeholder="Enter your name...">
+    <label>Email address</label>
+      <input type="email" id="email" placeholder="Enter your email...">
+     <p class="error"></p>
+    <label for="topic">What is this about?</label>
+    <select id="topic">
+      <option>Feature Suggestion</option>
+     <option>Bug Report</option>
+    <option>General Feedback</option>
+    <option>Other</option>
+    </select>
+    <label>Your feedback / bug report</label>
+     <textarea id="message" placeholder="Write your message here..."></textarea>
+     <label class="check">
+         <input type="checkbox" checked> I want to be updated on any sales or discounts through the email I have provided</label>
+        <p>Note: As the form is not actually connected to any server,your response will not be stored or sent</p>
+<div class="buttons">
+<button type="submit">Submit Feedback</button>
+<p>or</p>
+<button type="button" id="transmissionBtn">Send Transmission</button>
+</div>
+</form>
+</div><br><br><br>
+    <div class="footer">
+        <div class="footer-top">
+            <div class="footer-left">
+                <h2>Frolik</h2>
+                <p>Discover Your Next Favorite Game</p>
+            </div>
+            <ul class="footer-right">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="categories.html">Categories</a></li>
+                <li><a href="games.html">Games</a></li>
+                <li><a href="pc-check.html">PC Check</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="info.html">Info</a></li>
+            </ul>
+        </div>
+        <hr>
+        <div class="footer-bottom">
+            <p>© 2026 Frolik. All rights reserved.</p>
+            <ul>
+                <a href="info.html">Safety Guide</a>
+                <a href="feedback.html">Contact &amp; Feedback</a>
+            </ul>
+        </div>
+    </div>
+    <script src="feedback.js"></script>
+</body>
+</html>

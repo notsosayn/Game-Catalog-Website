@@ -331,3 +331,277 @@ nav .nav-right a:hover {
     color: rgba(255, 255, 255, 0.7);
     text-decoration: none;
 }
+
+/* Exact same navbar position and sizing across all pages */
+html {
+    scrollbar-gutter: stable;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    padding: 1rem 2rem;
+    margin: 0;
+    flex-wrap: wrap;
+    gap: 1rem;
+    z-index: 100;
+    box-sizing: border-box;
+}
+
+.nav-left h1 {
+    margin: 0;
+    line-height: 1.2;
+}
+
+.nav-left h1 a {
+    text-decoration: none;
+    font-family: 'Amoria';
+    font-size: 32px;
+    color: #ffffff;
+    transition: all 0.3s ease-out;
+}
+
+.nav-left h1 a:hover {
+    font-size: 32px;
+    opacity: 0.85;
+}
+
+.nav-centre {
+    display: flex;
+    list-style: none;
+    position: static;
+    transform: none;
+    margin: 0;
+    padding: 0;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.nav-centre li a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 20px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    color: #ffffff;
+    transition: all 0.3s ease-out;
+}
+
+.nav-centre a:hover,
+.nav-centre a.active {
+    padding: 5px 10px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.16);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.navbar img {
+    width: 28px;
+    height: 28px;
+    display: block;
+}
+
+.search-bar input {
+    box-sizing: border-box;
+    border-radius: 50px;
+    width: 200px;
+    padding: 6px 14px;
+    border: none;
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: none;
+    color: #ffffff;
+}
+
+.search-bar input:focus {
+    outline: none;
+    width: 200px;
+    border-color: rgba(255, 255, 255, 0.8);
+    box-shadow: none;
+}
+
+/* Exact same footer position, background, and sizing across all pages */
+.footer {
+    margin: 60px 50px 40px 50px;
+    padding: 40px 50px;
+    background: rgba(10, 10, 15, 0.45);
+    backdrop-filter: blur(15px);
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 20px;
+    box-shadow: 0 -12px 50px rgba(0, 0, 0, 0.85);
+    box-sizing: border-box;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-left h2 {
+    margin: 0;
+    padding: 5px 0;
+    font-family: 'Amoria';
+    font-size: 38px;
+    color: #ffffff;
+}
+
+.footer-left p {
+    margin: 0;
+    padding: 4px 0;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 14px;
+}
+
+.footer-left p:hover {
+    color: #ffffff;
+}
+
+.footer-right {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 25px;
+}
+
+.footer-right a {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.2s ease;
+}
+
+.footer-right a:hover,
+.footer-bottom a:hover {
+    color: #ffffff;
+}
+
+.footer hr {
+    border: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    margin: 20px 0;
+}
+
+.footer-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.footer-bottom p {
+    margin: 0;
+    color: #ffffff;
+}
+
+.footer-bottom ul {
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-bottom a {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    padding: 0;
+    transition: color 0.2s ease;
+}
+
+/* Cross-device compatibility */
+html, body {
+    overflow-x: hidden;
+}
+
+@media (max-width: 900px) {
+    .navbar {
+        justify-content: center;
+        padding: 1rem;
+    }
+
+    .nav-centre {
+        gap: 0.75rem;
+    }
+
+    .nav-centre li a {
+        font-size: 16px;
+        padding: 4px 8px;
+    }
+
+    .search-bar input {
+        width: 160px;
+        font-size: 15px;
+    }
+
+    .footer {
+        margin: 30px 16px !important;
+        padding: 24px 20px !important;
+    }
+
+    .footer-top,
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+        gap: 14px;
+    }
+
+    .footer-right {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0;
+        gap: 14px;
+    }
+
+    .footer-right a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        min-height: auto;
+        font-size: 18px;
+        padding: 24px 16px;
+    }
+
+    .hero h1 {
+        font-size: 56px;
+    }
+
+    .games-scroll,
+    #detail-scroll {
+        padding: 16px;
+    }
+
+    .game-card img {
+        height: 300px;
+    }
+
+    .big-card {
+        height: 240px;
+    }
+
+    .detail-hero {
+        font-size: 20px;
+        padding: 24px 16px 10px;
+    }
+}
